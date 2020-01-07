@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Megapolis</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="burger-menu" src="assets/burger-menu.svg" alt="menu">
+        <img class="logo-svg" src="assets/megapolis-logo.svg" alt="Megapolis">
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Личный&nbsp;кабинет</a></li>
+            </ul>
+        </nav>
+        <img class="basket-svg" src="assets/basket.svg" alt="basket">
+    </header>
+    <aside class="products-section">
+        <ul class="products-list">
+            <li class="products-list-element">
+                <a class="category-svg-link" href="#">
+                    <img class="category-svg" src="assets/iphone-icon.svg" alt="IPhone">
+                </a>
+                <a class="category-link" href="#">IPhone</a>
+            </li>
+            <li class="products-list-element">
+                <a class="category-svg-link" href="#">
+                    <img class="category-svg" src="assets/mac-logo.svg" alt="Mac">
+                </a>
+                <a class="category-link" href="#">Mac</a>
+            </li>
+            <li class="products-list-element">
+                <a class="category-svg-link" href="#">
+                    <img class="category-svg" src="assets/ipad-logo.svg" alt="IPad">
+                </a>
+                <a class="category-link" href="#">IPad</a>
+            </li>
+            <li class="products-list-element">
+                <a class="category-svg-link" href="#">
+                    <img class="category-svg" src="assets/watch-logo.svg" alt="Watch">
+                </a>
+                <a class="category-link" href="#">Watch</a>
+            </li>
+            <li class="products-list-element">
+                <a class="category-svg-link" href="#">
+                    <img class="category-svg" src="assets/gadjets.svg" alt="Гаджеты">
+                </a>
+                <a class="category-link" href="#">Гаджеты</a>
+            </li>
+            <li class="products-list-element">
+                <a class="category-svg-link" href="#">
+                    <img class="category-svg" src="assets/accessorises.svg" alt="Аксессуары">
+                </a>
+                <a class="category-link" href="#">Аксессуары</a>
+            </li>
+        </ul>
+    </aside>
+    <aside class="sidebar-info">
+        <p class="sidebar-name-of-list">Личная информация</p>
+        <ul class="sidebar-personal-info">
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Профиль</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Подарочные сертификаты</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Сохраненные карты</a>
+            </li>
+        </ul>
+        <p class="sidebar-name-of-list">Заказы</p>
+        <ul class="sidebar-orders">
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Моя корзина</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Мои заказы</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Купленные товары</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Мои сообщения</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Электронные чеки</a>
+            </li>
+            <li class="sidebar-info-list-element">
+                <a href="#" class="sidebar-link">Мои возвраты</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="orders-main">
+        <div class="headers">
+            <h1 class="orders-heading">Заказы</h1>
+            <a href="#" class="orders-heading-bought">Купленные товары</a>
+        </div>
+        <div class="dropdown-container">
+            <div class='dropdown'>
+                <p class="dropdown-selected">Все</p>
+                <img class="dropdown-arrow" src="assets/select-arrow.svg" alt="">
+            </div>
+            <ul class='option'>
+                <li class="dropdown-element-li dropdown-element-li-all"><a href='#' class="dropdown-element">Все</a>
+                </li>
+                <li class="dropdown-element-li"><a href='#' class="dropdown-element">Ожидает оплаты</a></li>
+                <li class="dropdown-element-li"><a href='#' class="dropdown-element">В обработке</a></li>
+                <li class="dropdown-element-li"><a href='#' class="dropdown-element">Выполненные</a></li>
+                <li class="dropdown-element-li"><a href='#' class="dropdown-element">Отмененные</a></li>
+            </ul>
+        </div>
+        <div class="orders-container">
+            <div id="orderCard" class="order-card order-details">
+                <div id="orderCardHeader" class="order-card-header">
+                    <button id="orderDateBtn" class="order-date">Заказ от
+                        <time datetime="2019-10-05">05.10.2019</time>
+                    </button>
+                    <p class="order-number">№ 3526498-21456</p>
+                    <p class="order-state order-state-sent"></p>
+                    <a href="#" class="support-link"> <img class="suport-svg" src="assets/suport.svg"
+                            alt="Написать в поддержку"></a>
+                    <p id="totalPriceHeading" class="total-price-heading" id="totalPriceHeading">Сумма</p>
+                    <p class="total-price"> 359 940 ₽</p>
+                </div>
+                <div class="delivery-info">
+                    <p class="expected-date-heading">Ожидаемая дата доставки</p>
+                    <p class="expected-date"><time datetime="2019-10-07">07.10.2019</time></p>
+                    <a class="track-link" href="#">Отследить</a>
+                    <p class="delivery-state delivery-courier"></p> 
+                    <p class="delivery-address">Краснодар, ул. Воронежская, д. 80, кв. 15 </p>
+                    <p class="reciever-heading">Получатель</p>
+                    <p class="reciever">Воронежский А.С.</p>
+                    <p class="reciever-phone">+7 (945) 456-89-95</p>
+                    <div class="bill-table">
+                        <p class="bill-table-products-heading">Товары</p>
+                        <p class="bill-table-price">119 000 ₽ </p>
+                        <p class="bill-table-delivery-heading">Доставка</p>
+                        <p class="bill-table-delivery-price">980 ₽ </p>
+                        <p class="bill-table-totally-heading">ИТОГО</p>
+                        <p class="bill-table-totaly">119 980 ₽</p>
+                    </div>
+
+                </div>
+                <div id="orderedProducts" class="ordered-products">
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+            <div id="orderCard" class="order-card order-details">
+                <div id="orderCardHeader" class="order-card-header">
+                    <button class="order-date">Заказ от
+                        <time datetime="2019-10-05">05.10.2019</time>
+                    </button>
+                    <p class="order-number">№ 3526498-21456</p>
+                    <p class="order-state order-state-done"></p>
+                    <a href="#" class="support-link"> <img class="suport-svg" src="assets/suport.svg"
+                            alt="Написать в поддержку"></a>
+                    <p id="totalPriceHeading" class="total-price-heading">Сумма</p>
+                    <p class="total-price"> 359 940 ₽</p>
+                </div>
+                <div class="delivery-info">
+                    <p class="expected-date-heading">Ожидаемая дата доставки</p>
+                    <p class="expected-date"><time datetime="2019-10-07">07.10.2019</time></p>
+                    <a class="track-link" href="#">Отследить</a>
+                    <p class="delivery-state delivery-self"></p> 
+                    <p class="delivery-address">Краснодар, ул. Воронежская, д. 80, кв. 15</p>
+                    <p class="reciever-heading">Получатель</p>
+                    <p class="reciever">Воронежский А.С.</p>
+                    <p class="reciever-phone">+7 (945) 456-89-95</p>
+                    <div class="bill-table">
+                        <p class="bill-table-products-heading">Товары</p>
+                        <p class="bill-table-price">119 000 ₽ </p>
+                        <p class="bill-table-delivery-heading">Доставка</p>
+                        <p class="bill-table-delivery-price">980 ₽ </p>
+                        <p class="bill-table-totally-heading">ИТОГО</p>
+                        <p class="bill-table-totaly">119 980 ₽</p>
+                    </div>
+
+                </div>
+                <div id="orderedProducts" class="ordered-products">
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                    <div class="order-product-card">
+                        <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                        <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                        <p class="model-color">фиолетовый</p>
+                        <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                        <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="orderCard" class="order-card order-details">
+            <div id="orderCardHeader" class="order-card-header">
+                <button class="order-date">Заказ от
+                    <time datetime="2019-10-05">05.10.2019</time>
+                </button>
+                <p class="order-number">№ 3526498-21456</p>
+                <p class="order-state order-state-canceled"></p>
+                <a href="#" class="support-link"> <img class="suport-svg" src="assets/suport.svg"
+                        alt="Написать в поддержку"></a>
+                <p id="totalPriceHeading" class="total-price-heading">Сумма</p>
+                <p class="total-price"> 359 940 ₽</p>
+            </div>
+            <div class="delivery-info">
+                <p class="expected-date-heading">Ожидаемая дата доставки</p>
+                <p class="expected-date"><time datetime="2019-10-07">07.10.2019</time></p>
+                <a class="track-link" href="#">Отследить</a>
+                <p class="delivery-state delivery-dhl"></p> 
+                <p class="delivery-address">Краснодар, ул. Воронежская, д. 80, кв. 15</p>
+                <p class="reciever-heading">Получатель</p>
+                <p class="reciever">Воронежский А.С.</p>
+                <p class="reciever-phone">+7 (945) 456-89-95</p>
+                <div class="bill-table">
+                    <p class="bill-table-products-heading">Товары</p>
+                    <p class="bill-table-price">119 000 ₽ </p>
+                    <p class="bill-table-delivery-heading">Доставка</p>
+                    <p class="bill-table-delivery-price">980 ₽ </p>
+                    <p class="bill-table-totally-heading">ИТОГО</p>
+                    <p class="bill-table-totaly">119 980 ₽</p>
+                </div>
+
+            </div>
+            <div id="orderedProducts" class="ordered-products">
+                <div class="order-product-card">
+                    <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                    <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                    <p class="model-color">фиолетовый</p>
+                    <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                    <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                </div>
+                <div class="order-product-card">
+                    <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                    <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                    <p class="model-color">фиолетовый</p>
+                    <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                    <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                </div>
+                <div class="order-product-card">
+                    <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                    <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                    <p class="model-color">фиолетовый</p>
+                    <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                    <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                </div>
+                <div class="order-product-card">
+                    <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                    <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                    <p class="model-color">фиолетовый</p>
+                    <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                    <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                </div>
+                <div class="order-product-card">
+                    <img class="product-photo" src="assets/iphone-11.png" alt="product">
+                    <a class="ordered-product-link" href="#">Apple iPhone 11 Pro 64 ГБ</a>
+                    <p class="model-color">фиолетовый</p>
+                    <p id="productQuantity" class="product-quantity"><span>1 </span>шт.</p>
+                    <p id="productPrice" class="product-price"><span>59 500</span> ₽</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="next-page-transition">
+            <p>страница <span>1</span> из <span>5</span></p>
+            <a href="#"><img src="assets/long-arrow.svg" alt="arrow to the next page"></a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-navigation">
+            <div class="footer-navigation-accessories">
+                <a href="#" class="footer-nav-heading">Аксессуары </a>
+                <button class="footer-nav-heading-button" id="footerButton">Аксессуары <img
+                        class="dropdown-arrow-footer" src="assets/select-arrow.svg" alt=""></button>
+                <ul id="footerNav" class="footer-nav">
+                    <li><a href="#" class="footer-nav-element">Наушники Beats</a></li>
+                    <li><a href="#" class="footer-nav-element">Камеры GoPro</a></li>
+                    <li><a href="#" class="footer-nav-element">Акустические системы</a></li>
+                    <li><a href="#" class="footer-nav-element">Модемы и сеть</a></li>
+                    <li><a href="#" class="footer-nav-element">Аксессуары для дронов DJI</a></li>
+                    <li><a href="#" class="footer-nav-element">Аксессуары для iPhone</a></li>
+                    <li><a href="#" class="footer-nav-element">Наушники и гарнитуры</a></li>
+                    <li><a href="#" class="footer-nav-element">Устройства ввода</a></li>
+                    <li><a href="#" class="footer-nav-element">Источники доп. питания</a></li>
+                    <li><a href="#" class="footer-nav-element">Аксессуары для GoPro</a></li>
+                    <li><a href="#" class="footer-nav-element">Внешние накопители</a></li>
+                    <li><a href="#" class="footer-nav-element">Сумки для ноутбуков</a></li>
+                </ul>
+            </div>
+            <div class="footer-navigation-services">
+                <a href="#" class="footer-nav-heading">Услуги</a>
+                <button class="footer-nav-heading-button" id="footerButton">Услуги <img class="dropdown-arrow-footer"
+                        src="assets/select-arrow.svg" alt=""></button>
+                <ul id="footerNav" class="footer-nav">
+                    <li><a href="#" class="footer-nav-element">Апгрейд компьютеров Apple</a></li>
+                    <li><a href="#" class="footer-nav-element">Загрузка мультимедиа файлов</a></li>
+                    <li><a href="#" class="footer-nav-element">Создание почтовых ящиков</a></li>
+                    <li><a href="#" class="footer-nav-element">Создание учётной записи Apple ID</a></li>
+                    <li><a href="#" class="footer-nav-element">Ремонт и техническое обслуживание техники Apple</a> </li>
+                    <li><a href="#" class="footer-nav-element">Консультации по работе с техникой Apple</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-navigation-iphone">
+                <a href="#" class="footer-nav-heading">IPhone</a>
+                <button class="footer-nav-heading-button" id="footerButton">IPhone<img class="dropdown-arrow-footer"
+                        src="assets/select-arrow.svg" alt=""></button>
+                <ul id="footerNav" class="footer-nav">
+                    <li><a href="#" class="footer-nav-element">iPhone 6</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone Xs</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone Xs Max</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone Xr</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone X</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone 8</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone 7</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone 7 Plus</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone 6s</a></li>
+                    <li><a href="#" class="footer-nav-element">iPhone SE</a></li>
+                </ul>
+            </div>
+            <div class="footer-navigation-mac">
+                <a href="#" class="footer-nav-heading">Mac</a>
+                <button class="footer-nav-heading-button" id="footerButton">Mac<img class="dropdown-arrow-footer"
+                        src="assets/select-arrow.svg" alt=""></button>
+                <ul id="footerNav" class="footer-nav">
+                    <li><a href="#" class="footer-nav-element">Mac Mini</a></li>
+                    <li><a href="#" class="footer-nav-element">iMac</a></li>
+                    <li><a href="#" class="footer-nav-element">MacBook Air</a></li>
+                    <li><a href="#" class="footer-nav-element">MacBook Pro</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-navigation-ipad">
+                <a href="#" class="footer-nav-heading">IPad</a>
+                <button class="footer-nav-heading-button" id="footerButton">IPad<img class="dropdown-arrow-footer"
+                        src="assets/select-arrow.svg" alt=""></button>
+                <ul id="footerNav" class="footer-nav">
+                    <li><a href="#" class="footer-nav-element">iPad Pro</a></li>
+                    <li><a href="#" class="footer-nav-element">iPad Air</a></li>
+                    <li><a href="#" class="footer-nav-element">iPad</a></li>
+                    <li><a href="#" class="footer-nav-element">iPad Mini</a></li>
+                </ul>
+            </div>
+            <div class="footer-navigation-common">
+                <a href="#" class="footer-nav-heading">Общее</a>
+                <button class="footer-nav-heading-button" id="footerButton">Общее<img class="dropdown-arrow-footer"
+                        src="assets/select-arrow.svg" alt=""></button>
+                <ul id="footerNav" class="footer-nav">
+                    <li><a href="#" class="footer-nav-element">Акции</a></li>
+                    <li><a href="#" class="footer-nav-element">Магазин</a></li>
+                    <li><a href="#" class="footer-nav-element">Контакты</a></li>
+                    <li><a href="#" class="footer-nav-element">Личный кабинет</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <img class="logo-svg" src="assets/megapolis-logo.svg" alt="Megapolis">
+            <a href="#" class="meta"> © 2019 Megapolis | Политика конфиденциальности</a>
+            <div class="meta-mobile">
+                <a href="#" class="policy">Политика конфиденциальности</a>
+                <p>© 2019 Megapolis</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="assets/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="assets/vk.svg" alt="vk"></a>
+                <a href="#"><img src="assets/fb.svg" alt="fb"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

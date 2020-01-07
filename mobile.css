@@ -1,0 +1,620 @@
+@media only screen and (max-width: 1340px) {
+    .orders-main {
+        width: 700px;
+    }
+    .delivery-heading, 
+    .delivery-address, 
+    .reciever-heading, 
+    .reciever, 
+    .reciever-phone {
+        left: 340px;
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    .orders-main {
+        width: 600px;
+    }
+    .delivery-state, 
+    .delivery-address, 
+    .reciever-heading, 
+    .reciever, 
+    .reciever-phone {
+        left: 250px;
+    }
+    .order-product-card {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .logo-svg {
+        margin: auto 0 auto 35px;
+    }
+    .main-nav-list li {
+        margin: 5px 30px;
+    }
+    .basket-svg {
+        margin: auto 40px auto 0;
+    }
+    .products-list {
+        margin: 20px 35px;
+    }
+    .sidebar-info {
+        font: 16px/19px SF UI Display;
+        margin: 60px 50px 0 35px;
+        position: absolute;
+        width: 230px;
+    }
+    .orders-main {
+        width: 460px;
+        left: 270px;
+    }
+    .orders-heading {
+        font-family: SF UI Display;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .suport-svg {
+        position: relative;
+        width: 180px;
+        top: -35px;
+    }
+    .total-price {
+        font-family: SF UI Display;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .ordered-products {
+        left: 0;
+        right: 0;
+        margin-top: 430px;
+    }
+    .order-product-card {
+        width: 125px;
+        height: 152px;
+        margin: 10px 14px;
+    }
+    .product-photo {
+        height: 100px;
+    }
+    .ordered-product-link {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .delivery-state {
+        left: 0;
+        top: 10px;
+    }
+    .delivery-address {
+        left: 0;
+        top: 20px;
+        margin: 0;
+        width: 310px;
+    }
+    .reciever-heading {
+        left: 0;
+        top: 40px;
+    }
+    .reciever {
+        left: 0;
+        top: 50px;
+    }
+    .reciever-phone {
+        left: 0;
+        top: 60px;
+    }
+    .track-link {
+        left: 250px;
+        top: 190px;
+    }
+    .footer-navigation {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 545px;
+    }
+    .footer-navigation-accessories {
+        margin-left: 35px;
+        width: 175px;
+    }
+    .footer-navigation-services {
+        width: 250px;
+    }
+    .footer-navigation-ipad {
+        width: 250px;
+        margin-top: 20px;
+    }
+    .footer-navigation-iphone {
+        width: 120px;
+    }
+    .footer-navigation-mac {
+        margin-top: 20px;
+        width: 175px;
+        margin-left: 35px;
+        margin-right: 0;
+    }
+    .footer-navigation-common {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .social-media {
+        margin: auto 10px;
+    }
+
+    .bill-table {
+        top: 220px;
+        left: 220px;
+        width: 200px;
+    }
+    .bill-table p{
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .bill-table-price,
+    .bill-table-delivery-price,
+    .bill-table-totaly {
+        text-align: right;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .sidebar-info {
+        display: none;
+    }
+    .main-nav-list {
+        display: none;
+    }
+    .orders-heading-bought {
+        display: none;
+    }
+    .orders-main {
+        left: 0;
+    }
+    .ordered-products {
+        flex-direction: column;
+    }
+    .order-product-card {
+        display: flex;
+        flex-direction: row;
+    }
+    .ordered-product-link {
+        margin: 45px 0 45px 40px;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .burger-menu {
+        display: block;
+        margin-left: 30px;
+    }
+
+    .logo-svg {
+        height: 35px;
+        margin: auto auto;
+    }
+
+    .busket-svg {
+        margin: auto 30px auto 0;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .category-svg-link {
+        display: none;
+    }
+
+    .category-link {
+        display: block;
+        font: normal normal 14px/14px SF UI Display;
+        color: #000;
+    }
+
+    .products-list {
+        margin: 15px auto;
+    }
+
+    .orders-main {
+        top: 30px;
+        max-width: 414px;
+    }
+
+    .orders-heading {
+        margin-left: 27px;
+    }
+
+    .dropdown-container {
+        margin-left: 27px;
+    }
+
+    .dropdown-selected {
+        left: 40px;
+        top: 68px;
+    }
+
+    .track-link {
+        left: 240px;
+        padding: 12px 20px;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    footer .logo-svg {
+        display: none;
+    }
+
+    .next-page-transition {
+        display: none;
+    }
+
+    .footer-navigation {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        min-height: 240px;
+        height: 100%;
+    }
+
+    .footer-navigation-accessories ul,
+    .footer-navigation-services ul, 
+    .footer-navigation-iphone ul, 
+    .footer-navigation-mac ul, 
+    .footer-navigation-ipad ul, 
+    .footer-navigation-common ul{
+        display: none;
+        margin: 20px 0 20px 30px;
+    }
+
+    .footer-navigation-accessories,
+    .footer-navigation-services, 
+    .footer-navigation-iphone, 
+    .footer-navigation-mac, 
+    .footer-navigation-ipad, 
+    .footer-navigation-common {
+        margin: 0;
+        position: relative;
+    }
+
+    .footer-nav-heading-button {
+        display: block;
+        background-color: #414141;
+        color: #fff;
+        font: normal 600 14px/17px SF UI Display;
+        width: 414px;
+        margin: 0;
+        height: 40px;
+        text-align: left;
+        padding: 0 20px;
+        border: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .footer-nav-heading {
+        display: none;
+    }
+
+    .meta {
+        display: none;
+        position: relative;
+    }
+
+    .meta-mobile {
+        display: block;
+        margin: 20px auto 0 auto;
+        font-family: SF UI Display thin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 110%;
+        color: #fff;
+        width: 220px;
+        height: 70px;
+    }
+
+    .meta-mobile a {
+        position: relative;
+        left: 10px;
+        right: 0;
+        top: -5px;
+        color: #fff;
+        line-height: 30px;
+        margin: 0 auto;
+    }
+
+    .meta-mobile p {
+        position: relative;
+        bottom: -10px;
+        text-align: center;
+    }
+
+    .footer-navigation {
+        margin-top: 50px;
+    }
+
+    .dropdown-arrow-footer {
+        position: absolute;
+        filter: invert(100%);
+        left: 350px;;
+        top: 15px;
+    }
+
+    .delivery-address {
+        width: 350px;
+        white-space: normal;
+        margin-bottom: 20px;
+    }
+
+    .bill-table {
+        left: 0;
+        top: 250px;
+        width: 400px;
+    }
+
+    .bill-table p {
+        width: 190px;
+    }
+
+    .order-product-card {
+        height: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .products-list-element {
+        padding: 10px 3px;
+        width: 75px;
+    }
+
+    .orders-main {
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 200px;
+    }
+
+    .order-date {
+        font-family: SF UI Display;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 10px 0 10px 10px;
+    }
+
+    .order-number {
+        font-family: SF UI Display;
+        font-size: 14px;
+    
+    }
+
+    .total-price-heading {
+        left: 20px;
+    }
+
+    .total-price {
+        left: 20px;
+    }
+
+    .suport-svg {
+        left: 20px;
+    }
+
+    .order-card-header {
+        height: 150px;
+    }
+
+    .track-link {
+        left: 150px;
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .reciever-address {
+        white-space: wrap;
+    }
+
+    .footer-nav-heading-button {
+        display: block;
+        width: 320px;
+    }
+
+    .dropdown-arrow-footer {
+        position: absolute;
+        filter: invert(100%);
+        left: 250px;;
+        top: 15px;
+    }
+
+    .product-photo {
+        height: 70px;
+    }
+
+    
+
+    .order-card-header {
+        position: relative;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-date,
+    .order-number, 
+    .order-state,
+    .support-link,
+    .total-price-heading,
+    .total-price {
+        display: block;
+        position: relative;
+        top: 0;
+        margin: 7px 20px;
+
+    }
+
+    .order-date {
+        margin: 15px 0 0 15px;
+    }
+
+    .total-price-heading,
+    .total-price {
+        width: 100px;
+        margin: 0;
+    }
+
+    .delivery-info {
+        top: 220px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        width: 90%;
+    }
+
+    .ordered-products {
+        position: relative;
+        margin-top: 300px;
+    }
+
+    .delivery-address {
+        width: 300px;
+        white-space: normal;
+        margin-bottom: 10px;
+    }
+    .suport-svg,
+    .expected-date-heading, 
+    .expected-date, 
+    .delivery-state,
+    .delivery-address,
+    .reciever-heading,
+    .reciever,
+    .reciever-phone {
+        font-family: SF UI Display;
+        font-size: 14px;
+        line-height: 17px;
+        display: block;
+        position: relative;
+        top: 10px;
+        margin: 5px 0;
+        width: 90%;
+    }
+
+    .delivery-state {
+        top: -30px;
+    }
+
+    .support-link {
+        top: -30px;
+    }
+
+    .order-state {
+        font: 16px/20px SF UI Display;
+        width: 20px;
+        top: -10px;
+    }
+
+    .total-price-heading {
+        top: -20px;
+    }
+
+    .total-price {
+        top: -20px;
+    }
+
+    .reciever-heading {
+        top: -30px;
+    }
+
+    .reciever {
+        top: -30px;
+    }
+
+    .reciever-phone {
+        top: -30px;
+    }
+
+    .delivery-address {
+        font: 14px/20px SF UI Display;
+        top: -30px;
+    }
+
+    .track-link {
+        top: 170px;
+        width: 100px;
+    }
+
+    .total-price-heading,
+    .total-price {
+        left: 20px;
+        margin: 5px 0;
+        
+    }
+
+    .suport-svg {
+        left: 0;
+        margin: 0;
+    }
+
+    .order-state {
+        margin: 0;
+        left: 20px;
+        width: 90%;
+    }
+
+    .order-state-formed::before  {
+        content: "СФОРМИРОВАН";
+        background: #F8F8F8;
+        color: #000;
+        font: 16px/50px SF UI Display;
+        margin-left: 20px;
+        padding: 3px;
+        width: 126px;
+    }
+    
+    .order-state-sent::before,
+    .order-state-forming::before,
+    .order-state-waiting::before, 
+    .order-state-done::before, 
+    .order-state-canceled::before {      
+        margin-left: 0;
+    }
+
+    .order-product-card {
+        height: 70px;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .ordered-product-link {
+        margin: 25px 0 45px 20px;
+    }
+
+    .bill-table {
+        left: 0;
+        top: 250px;
+        width: 300px;
+    }
+
+    .bill-table p {
+        width: 140px;
+    }
+
+    
+
+}
