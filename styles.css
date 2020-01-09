@@ -16,24 +16,35 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: #E5E5E5;
+}
+
 .header {
     background: #1F1F1F;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+
     margin: auto 0;
     width: 100%;
 }
 
+.main-nav {
+    width: 80%;
+}
 .main-nav-list {
     display: flex;
     flex-direction: row;
-    padding: 15px 0;
+    justify-content: space-around;
+    padding: 26px 0 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .main-nav-list li {
-    margin: 5px 60px;
+    /* margin: 5px 60px; */
 }
 
 .main-nav-list a {
@@ -46,38 +57,46 @@ a {
 }
 
 .logo-svg {
-    margin: auto 0 auto 135px;
+    margin: 10px 0 10px 50px;
 }
 
 .basket-svg {
-    margin: auto 190px auto 0;
+    margin-right: 50px;
 }
 
 .products-list {
     direction: row;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 135px;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
 .products-list-element {
     padding: 10px;
-    width: 78px;
+    /* width: 78px; */
 }
 
 .category-link {
     display: none;
+    white-space: nowrap;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
 }
 
 .sidebar-info {
     font: 18px SF UI Display;
-    margin: 60px 100px 0 135px;
-    position: absolute;
-    width: 230px;
+    margin-right: 40px;
+    position: relative;
+    /* width: 230px; */
 }
 
 .sidebar-link {
     color: #000;
+    white-space: nowrap;
 }
 
 .sidebar-link:hover {
@@ -86,6 +105,7 @@ a {
 
 .sidebar-name-of-list {
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .sidebar-personal-info {
@@ -96,12 +116,20 @@ a {
     margin-top: 15px;
 }
 
+/* ------------------------main */
+
+.center-div {
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
 .orders-main {
     height: 100%;
-    left: 435px;
     position: relative;
-    top: 55px;
-    width: 870px;
+    width: 80%;
 }
 
 
@@ -127,7 +155,6 @@ a {
     flex-direction: column;
     height: 100%;
     position: relative;
-    top: 0;
     width: 100%;
     z-index: 0;
 }
@@ -139,7 +166,6 @@ a {
     flex-direction: column;
     height: 100%;
     margin-top: 65px;
-    min-height: 570px;
     position: relative;
     width: 100%;
 }
@@ -147,10 +173,13 @@ a {
 .order-card-header {
     background: #EBECEF;
     height: 130px;
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 100%;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 .dropdown {
@@ -212,7 +241,6 @@ a {
 }
 
 .order-date {
-    top: 20px;
     color: #000;
     font: 700 22px/26px SF UI Display;
     margin: 20px 15px 10px;
@@ -220,6 +248,13 @@ a {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.order-date:hover,
+.order-date:focus,
+.order-date:active {
+    outline: none;
+    color: #5A00A5;
 }
 
 .order-date-opening-link {
@@ -242,15 +277,20 @@ a {
     width: 126px;
 }
 
-.order-state-sent::before  {
-    content: "ПЕРЕДАН В ДОСТАВКУ";
+.order-state {
+    font: 16px/18px SF UI Display;
+}
+
+.order-state-sent  {
     background: #F8F8F8;
     color: #000;
-    font: 16px/50px SF UI Display;
-    margin-left: 20px;
+    
     margin-right: 20px;
-    padding: 3px;
-    width: 126px;
+    padding: 3px 3px 0 3px;
+    height: 20px;
+    width: 180px;
+    white-space: nowrap;
+    
 }
 
 .order-state-forming::before  {
@@ -293,38 +333,48 @@ a {
     width: 75px;
 }
 
-.suport-svg {
-    bottom: 15px;
-    left: 210px;
-    position: absolute;
+.order-state-support {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px 20px;
+    width: 50%;
 }
+
 
 .total-price-heading {
     font: 16px/19px SF UI Display;
-    position: absolute;
-    right: 20px;
-    top: 40px;
+    margin: 30px 20px 10px 0;
+    text-align: right;
+
 }
 
 .total-price {
-    bottom: 40px;
     color: #000;
     font: 600 22px/26px SF UI Display;
-    position: absolute;
-    right: 20px;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .delivery-info {
-    left: 20px;
-    position: absolute;
-    top: 150px;
     width: 90%;
-    max-height: 300px;
-    height: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+}
+
+.delivery-info-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .expected-date-heading {
-    width: 250px;
 }
 
 .expected-date-heading, 
@@ -344,9 +394,13 @@ a {
     color: #5A00A5;
     font: 600 18px/14px SF UI Display;
     padding: 12px 44px;
-    position: relative;
-    top: 60px;
+    width: 115px;
     text-align: center;
+    margin: 20px 0;
+}
+
+.track-link-right {
+    display: none;
 }
 
 .track-link:hover, 
@@ -356,22 +410,17 @@ a {
 }
 
 .delivery-state {
-    left: 500px;
-    position: relative;
-    top: -50px;
+    
     white-space: nowrap;
-    width: 310px;
+    
     margin: 0;
 }
 
 .delivery-address {
     font: 16px/19px SF UI Display;
-    left: 500px;
-    position: relative;
-    top: -40px;
+    margin-top: 10px;
     white-space: normal;
-    width: 310px;
-    margin: 0;
+
 }
 
 .delivery-courier::before {
@@ -387,55 +436,39 @@ a {
 }
 
 .reciever-heading {
-    left: 500px;
-    position: relative;
-    top: -30px;
-    width: 310px;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .reciever {
+    margin-top: 10px;
     font: 16px/19px SF UI Display;
-    left: 500px;
-    position: relative;
-    top: -20px;
     white-space: nowrap;
-    width: 310px;
-    margin: 0;
 }
 
 .reciever-phone {
     font: 16px/19px SF UI Display;
-    left: 500px;
-    position: relative;
-    top: -10px;
     white-space: nowrap;
-    width: 310px;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .bill-table {
     display: none;
     /* display: none; */
     font: 16px/19px SF UI Display;
-    width: 300px;
-    height: 80px;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
-    left: 500px;
-    top: 30px;
+
 }
 
 .bill-table p{
-    width: 150px;
+
     margin-top: 20px;
 }
 
 .bill-table-products-heading,
 .bill-table-delivery-state,
 .bill-table-totally-heading {
-    width: 150px;
+
 }
 
 .bill-table-totally-heading,
@@ -474,11 +507,15 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100%;
-    left: 35px;
-    margin-top: 310px;
+    height: 100%; 
     position: relative;
-    right: 35px;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.ordered-products-container {
+    min-width: 200px;
     width: 100%;
 }
 
@@ -515,17 +552,30 @@ a {
     display: none;
 }
 
-.footer-navigation {
-    margin-top: 200px;
+.footer {
+    display: relative;
+    bottom: 0;
+} 
+
+.footer-navigation-container {
+    width: 100%;
     position: relative;
     background: #414141;
-    width: 100%;
+}
+
+.footer-navigation {
+    position: relative;
+    
+    width: 80%;
+    height: 100%;
     color: #FFF;
-    height: 380px;
     bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;    
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr;
+    padding: 45px ;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .footer-info {
@@ -535,22 +585,19 @@ a {
     color: #ffffff;
     height: 110px;
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
-.footer-navigation-accessories {
-    margin: 45px 60px 0 140px;
-}
-
+.footer-navigation-accessories,
 .footer-navigation-services, 
 .footer-navigation-iphone, 
 .footer-navigation-mac, 
 .footer-navigation-ipad, 
 .footer-navigation-common {
-    margin: 45px 32px 0;
-}
-
-.footer-navigation-ipad {
-    margin: 45px 32px 0 92px;
+    margin-left: 10px;
 }
 
 .footer-nav-element {
@@ -564,11 +611,6 @@ a {
     line-height: 40px;
 }
 
-.footer-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .meta {
     margin: auto 0;
@@ -578,7 +620,7 @@ a {
 }
 
 .social-media {
-    margin: auto 70px;
+    margin: auto 0;
 }
 
 .social-media a {
