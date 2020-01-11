@@ -1,634 +1,599 @@
 @font-face {
-    font-family: 'SF UI Display';
-    src: url('fonts/SF UI/SFUIDisplay-Regular.ttf');
+	font-family: 'SF UI Display';
+	src: url('fonts/SF UI/SFUIDisplay-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'SF UI Display thin';
-    src: url('fonts/SF UI/SFUIDisplay-Thin.ttf');
+	font-family: 'SF UI Display thin';
+	src: url('fonts/SF UI/SFUIDisplay-Thin.ttf');
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-
 .header {
-    background: #1F1F1F;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    margin: auto 0;
-    width: 100%;
+	background: #1F1F1F;
+	box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto 0;
+	width: 100%;
 }
 
 .main-nav {
-    width: 80%;
-}
-.main-nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 26px 0 0;
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
 }
 
-.main-nav-list li {
-    /* margin: 5px 60px; */
+.main-nav-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 26px 0 0;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .main-nav-list a {
-    color: #FFF;
-    font: 14px/17px SF UI Display;
+	color: #FFF;
+	font: 14px/17px SF UI Display;
 }
 
 .burger-menu {
-    display: none;
+	display: none;
 }
 
 .logo-svg {
-    margin: 10px 0 10px 50px;
+	margin: 10px 0 10px 50px;
 }
 
 .basket-svg {
-    margin-right: 50px;
+	margin-right: 50px;
 }
 
 .products-list {
-    direction: row;
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    flex-direction: row;
+	justify-content: space-around;
+	margin: 20px 0;
 }
 
 .products-list-element {
-    padding: 10px;
-    /* width: 78px; */
+	padding: 10px;
 }
 
 .category-link {
-    display: none;
-    white-space: nowrap;
-    font-family: SF UI Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    color: #000;
+	display: none;
+	white-space: nowrap;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 14px;
+	color: #000;
 }
 
 .sidebar-info {
-    font: 18px SF UI Display;
-    margin-right: 40px;
-    position: relative;
-    /* width: 230px; */
+	font: 18px SF UI Display;
+	margin-right: 40px;
+	position: relative;
 }
 
 .sidebar-link {
-    color: #000;
-    white-space: nowrap;
+	color: #000;
+	white-space: nowrap;
 }
 
 .sidebar-link:hover {
-    color: #5A00A5;
+	color: #5A00A5;
 }
 
 .sidebar-name-of-list {
-    font-weight: 600;
-    white-space: nowrap;
+	font-weight: 600;
+	white-space: nowrap;
 }
 
 .sidebar-personal-info {
-    margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .sidebar-info-list-element {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
-/* ------------------------main */
-
 .center-div {
-    position: relative;
-    margin: 50px auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
+	position: relative;
+	margin: 50px auto;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
 }
 
 .orders-main {
-    height: 100%;
-    position: relative;
-    width: 80%;
+	height: 100%;
+	position: relative;
+	width: 80%;
 }
 
-
 .orders-heading {
-    color: #5A00A5;
-    font: 600 24px/29px SF UI Display;
+	color: #5A00A5;
+	font: 600 24px/29px SF UI Display;
 }
 
 .orders-heading-bought {
-    color: #000;
-    font: 600 24px/29px SF UI Display;
-    margin-left: 115px;
+	color: #000;
+	font: 600 24px/29px SF UI Display;
+	margin-left: 115px;
 }
 
 .headers {
-    direction: row;
     display: flex;
-    margin-bottom: 35px;
+	flex-direction: row;
+	margin-bottom: 35px;
 }
 
 .orders-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    z-index: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 0;
 }
 
 .order-card {
-    background: #F8F8F8;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-top: 65px;
-    position: relative;
-    width: 100%;
+	background: #F8F8F8;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin-top: 65px;
+	position: relative;
+	width: 100%;
 }
 
 .order-card-header {
-    background: #EBECEF;
-    height: 130px;
-    position: relative;
-    width: 100%;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+	background: #EBECEF;
+	height: 130px;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .dropdown {
-    border: 1px solid #ccc;
-    cursor: pointer;
-    height: 40px;
-    width: 310px;
-    z-index: 2;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	height: 40px;
+	width: 310px;
+	z-index: 2;
 }
 
 .dropdown-selected {
-    font: 18px SF UI Display;
-    left: 15px;
-    position: absolute;
-    top: 74px;
+	font: 18px SF UI Display;
+	left: 15px;
+	position: absolute;
+	top: 74px;
 }
 
 .dropdown-arrow {
-    float: right;
-    margin: 15px;
+	float: right;
+	margin: 15px;
 }
 
 .option {
-    background: #FFF;
-    border: 1px solid #ccc;
-    border-bottom: 0;
-    display: none;
-    margin-top: -1px;
-    padding: 0;
-    position: absolute;
-    width: 310px;
-    z-index: 2;
+	background: #FFF;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	display: none;
+	margin-top: -1px;
+	padding: 0;
+	position: absolute;
+	width: 310px;
+	z-index: 2;
 }
 
 .dropdown-element-li {
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
-    padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	padding: 10px;
 }
 
 .dropdown-element {
-    color: #000;
-    font: 18px SF UI Display;
+	color: #000;
+	font: 18px SF UI Display;
 }
 
-.dropdown-element-li:hover, 
+.dropdown-element-li:hover,
 .dropdown-element:hover {
-    background: #F8F0FF;
-    border: 1px solid #5A00A5;
+	background: #F8F0FF;
+	border: 1px solid #5A00A5;
 }
 
 .dropdown-element-li-all {
-    background: #EBECEF;
-    border: 1px solid #CFCFCF;
+	background: #EBECEF;
+	border: 1px solid #CFCFCF;
 }
 
 .dropdown-element:hover {
-    border: 0;
+	border: 0;
 }
 
 .order-date {
-    color: #000;
-    font: 700 22px/26px SF UI Display;
-    margin: 20px 15px 10px;
-    text-align: left;
-    background: none;
-    border: none;
-    cursor: pointer;
+	color: #000;
+	font: 700 22px/26px SF UI Display;
+	margin: 20px 15px 10px;
+	text-align: left;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
 
 .order-date:hover,
 .order-date:focus,
 .order-date:active {
-    outline: none;
-    color: #5A00A5;
+	outline: none;
+	color: #5A00A5;
 }
 
 .order-date-opening-link {
-    color: #000;
+	color: #000;
 }
 
 .order-number {
-    color: #000;
-    font: 16px/19px SF UI Display;
-    margin-left: 20px;
+	color: #000;
+	font: 16px/19px SF UI Display;
+	margin-left: 20px;
 }
 
-.order-state-formed::before  {
-    content: "СФОРМИРОВАН";
-    background: #F8F8F8;
-    color: #000;
-    font: 16px/50px SF UI Display;
-    margin-left: 20px;
-    padding: 3px;
-    width: 126px;
+.order-state-formed::before {
+	content: "СФОРМИРОВАН";
+	background: #F8F8F8;
+	color: #000;
+	font: 16px/50px SF UI Display;
+	margin-left: 20px;
+	padding: 3px;
+	width: 126px;
 }
 
 .order-state {
-    font: 16px/18px SF UI Display;
+	font: 16px/18px SF UI Display;
 }
 
-.order-state-sent  {
-    background: #F8F8F8;
-    color: #000;
-    
-    margin-right: 20px;
-    padding: 3px 3px 0 3px;
-    height: 20px;
-    width: 180px;
-    white-space: nowrap;
-    
+.order-state-sent {
+	background: #F8F8F8;
+	color: #000;
+	margin-right: 20px;
+	padding: 3px 3px 0 3px;
+	height: 20px;
+	width: 180px;
+	white-space: nowrap;
 }
 
-.order-state-forming::before  {
-    content: "В ОБРАБОТКЕ";
-    background: #F8F8F8;
-    color: #000;
-    font: 16px/50px SF UI Display;
-    margin-left: 20px;
-    padding: 3px;
-    width: 126px;
+.order-state-forming::before {
+	content: "В ОБРАБОТКЕ";
+	background: #F8F8F8;
+	color: #000;
+	font: 16px/50px SF UI Display;
+	margin-left: 20px;
+	padding: 3px;
+	width: 126px;
 }
 
-.order-state-waiting::before  {
-    content: "ОЖИДАЕТ ОПЛАТЫ";
-    background: #F8F8F8;
-    color: #000;
-    font: 16px/50px SF UI Display;
-    margin-left: 20px;
-    padding: 3px;
-    width: 126px;
+.order-state-waiting::before {
+	content: "ОЖИДАЕТ ОПЛАТЫ";
+	background: #F8F8F8;
+	color: #000;
+	font: 16px/50px SF UI Display;
+	margin-left: 20px;
+	padding: 3px;
+	width: 126px;
 }
 
 .order-state-done::before {
-    content: "ВЫПОЛНЕН";
-    background: #4EE478;
-    color: #000;
-    font: 16px/50px SF UI Display;
-    margin-left: 20px;
-    padding: 3px;
-    width: 90px;
+	content: "ВЫПОЛНЕН";
+	background: #4EE478;
+	color: #000;
+	font: 16px/50px SF UI Display;
+	margin-left: 20px;
+	padding: 3px;
+	width: 90px;
 }
 
 .order-state-canceled::before {
-    content: "ОТМЕНЕН";
-    background: #EE290E;
-    color: #fff;
-    font: 16px/50px SF UI Display;
-    margin-left: 20px;
-    padding: 3px;
-    width: 75px;
+	content: "ОТМЕНЕН";
+	background: #EE290E;
+	color: #fff;
+	font: 16px/50px SF UI Display;
+	margin-left: 20px;
+	padding: 3px;
+	width: 75px;
 }
 
 .order-state-support {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 10px 20px;
-    width: 50%;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 10px 20px;
+	width: 50%;
 }
 
-
 .total-price-heading {
-    font: 16px/19px SF UI Display;
-    margin: 30px 20px 10px 0;
-    text-align: right;
-
+	font: 16px/19px SF UI Display;
+	margin: 30px 20px 10px 0;
+	text-align: right;
 }
 
 .total-price {
-    color: #000;
-    font: 600 22px/26px SF UI Display;
-    text-align: right;
-    margin-right: 20px;
+	color: #000;
+	font: 600 22px/26px SF UI Display;
+	text-align: right;
+	margin-right: 20px;
 }
 
 .delivery-info {
-    width: 90%;
-    height: 140px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 20px;
-    position: relative;
+	width: 90%;
+	height: 140px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 20px;
+	position: relative;
 }
 
 .delivery-info-left {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .delivery-info-right {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
-
-
-.expected-date-heading, 
-.delivery-state, 
+.expected-date-heading,
+.delivery-state,
 .reciever-heading {
-    font: 600 18px/21px SF UI Display;
+	font: 600 18px/21px SF UI Display;
 }
 
 .expected-date {
-    font: 16px/19px SF UI Display;
-    margin-top: 10px;
+	font: 16px/19px SF UI Display;
+	margin-top: 10px;
 }
 
 .track-link {
-    background: #F8F0FF;
-    border-radius: 4px;
-    color: #5A00A5;
-    font: 600 18px/14px SF UI Display;
-    padding: 12px 44px;
-    width: 115px;
-    text-align: center;
-    margin: 20px 0;
+	background: #F8F0FF;
+	border-radius: 4px;
+	color: #5A00A5;
+	font: 600 18px/14px SF UI Display;
+	padding: 12px 44px;
+	width: 115px;
+	text-align: center;
+	margin: 20px 0;
 }
 
 .track-link-right {
-    display: none;
+	display: none;
 }
 
-.track-link:hover, 
+.track-link:hover,
 .track-link:focus {
-    background: #5A00A5;
-    color: #FFF;
+	background: #5A00A5;
+	color: #FFF;
 }
 
 .delivery-state {
-    
-    white-space: nowrap;
-    
-    margin: 0;
+	white-space: nowrap;
+	margin: 0;
 }
 
 .delivery-address {
-    font: 16px/19px SF UI Display;
-    margin-top: 10px;
-    white-space: normal;
-
+	font: 16px/19px SF UI Display;
+	margin-top: 10px;
+	white-space: normal;
 }
 
 .delivery-courier::before {
-    content: "Доставка курьером";
+	content: "Доставка курьером";
 }
 
 .delivery-self::before {
-    content: "Доставка почтой";
+	content: "Доставка почтой";
 }
 
 .delivery-dl::before {
-    content: "Доставка DHL";
+	content: "Доставка DHL";
 }
 
 .reciever-heading {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 .reciever {
-    margin-top: 10px;
-    font: 16px/19px SF UI Display;
-    white-space: nowrap;
+	margin-top: 10px;
+	font: 16px/19px SF UI Display;
+	white-space: nowrap;
 }
 
 .reciever-phone {
-    font: 16px/19px SF UI Display;
-    white-space: nowrap;
-    margin-top: 10px;
+	font: 16px/19px SF UI Display;
+	white-space: nowrap;
+	margin-top: 10px;
 }
 
 .bill-table {
-    display: none;
-    /* display: none; */
-    font: 16px/19px SF UI Display;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+	display: none;
+	font: 16px/19px SF UI Display;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.bill-table p{
-
-    margin-top: 20px;
-}
-
-.bill-table-products-heading,
-.bill-table-delivery-state,
-.bill-table-totally-heading {
-
+.bill-table p {
+	margin-top: 20px;
 }
 
 .bill-table-totally-heading,
 .bill-table-totaly {
-    font: 600 22px/26px SF UI Display;
+	font: 600 22px/26px SF UI Display;
 }
 
-
 .order-product-card {
-    height: 190px;
-    margin: 35px 20px;
-    position: relative;
-    width: 160px;
+	height: 190px;
+	margin: 35px 20px;
+	position: relative;
+	width: 160px;
 }
 
 .product-quantity {
-    font: 18px/21px SF UI Display;
-    display: block;
-    position: relative;
-    height: 20px;
-    width: 100px;
-    margin: 70px 120px 70px 50px;
+	font: 18px/21px SF UI Display;
+	display: block;
+	position: relative;
+	height: 20px;
+	width: 100px;
+	margin: 70px 120px 70px 50px;
 }
 
 .product-price {
-    font: 600 18px/21px SF UI Display;
-    display: block;
-    margin: 70px 0;
+	font: 600 18px/21px SF UI Display;
+	display: block;
+	margin: 70px 0;
 }
 
 .model-color {
-    font: 16px/20px SF UI Display;
+	font: 16px/20px SF UI Display;
 }
 
 .ordered-products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%; 
-    position: relative;
-    align-items: flex-start;
-    width: 100%;
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100%;
+	position: relative;
+	align-items: flex-start;
+	width: 100%;
 }
 
 .ordered-products-container {
-    min-width: 200px;
-    width: 100%;
+	min-width: 200px;
+	width: 100%;
 }
 
 .product-quantity,
 .product-price,
 .model-color {
-    display: none;
+	display: none;
 }
 
 .product-photo {
-    height: 140px;
-    width: auto;
+	height: 140px;
+	width: auto;
 }
 
 .ordered-product-link {
-    font: 18px/20px SF UI Display;
-    /* margin: 0 0 0 60px; */
-    text-align: left;
+	font: 18px/20px SF UI Display;
+	text-align: left;
 }
 
 .next-page-transition {
-    display: flex;
-    flex-direction: row;
-    float: right;
-    margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	float: right;
+	margin-top: 20px;
 }
 
 .next-page-transition p {
-    font: 18px SF UI Display;
-    margin-right: 10px;
+	font: 18px SF UI Display;
+	margin-right: 10px;
 }
 
 .footer-nav-heading-button {
-    display: none;
+	display: none;
 }
 
 .footer {
-    display: relative;
-    bottom: 0;
-} 
+	display: relative;
+	bottom: 0;
+}
 
 .footer-navigation-container {
-    width: 100%;
-    position: relative;
-    background: #414141;
+	width: 100%;
+	position: relative;
+	background: #414141;
 }
 
 .footer-navigation {
-    position: relative;
-    
-    width: 80%;
-    height: 100%;
-    color: #FFF;
-    bottom: 0px;
-    display: grid;    
-    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr;
-    padding: 45px ;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+	position: relative;
+	width: 80%;
+	height: 100%;
+	color: #FFF;
+	bottom: 0px;
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr;
+	padding: 45px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 
 .footer-info {
-    position: relative;
-    background: #1F1F1F;
-    width: 100%;
-    color: #ffffff;
-    height: 110px;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+	position: relative;
+	background: #1F1F1F;
+	width: 100%;
+	color: #ffffff;
+	height: 110px;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .footer-navigation-accessories,
-.footer-navigation-services, 
-.footer-navigation-iphone, 
-.footer-navigation-mac, 
-.footer-navigation-ipad, 
+.footer-navigation-services,
+.footer-navigation-iphone,
+.footer-navigation-mac,
+.footer-navigation-ipad,
 .footer-navigation-common {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .footer-nav-element {
-    color: #FFF;
-    font: 14px/22px SF UI Display thin;
+	color: #FFF;
+	font: 14px/22px SF UI Display thin;
 }
 
 .footer-nav-heading {
-    color: #FFF;
-    font: 600 14px SF UI Display;
-    line-height: 40px;
+	color: #FFF;
+	font: 600 14px SF UI Display;
+	line-height: 40px;
 }
 
-
 .meta {
-    margin: auto 0;
-    color: #FFF;
-    font: normal normal 14px 'PT Sans', sans-serif;
-    letter-spacing: 0.025em;
+	margin: auto 0;
+	color: #FFF;
+	font: normal normal 14px 'PT Sans', sans-serif;
+	letter-spacing: 0.025em;
 }
 
 .social-media {
-    margin: auto 0;
+	margin: auto 0;
 }
 
 .social-media a {
-    margin: 0 8px;
+	margin: 0 8px;
 }
 
 .meta-mobile {
-    display: none;
+	display: none;
 }
