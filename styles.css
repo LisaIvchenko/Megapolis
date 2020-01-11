@@ -16,9 +16,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    background: #E5E5E5;
-}
 
 .header {
     background: #1F1F1F;
@@ -374,8 +371,13 @@ body {
     flex-direction: column;
 }
 
-.expected-date-heading {
+.delivery-info-right {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .expected-date-heading, 
 .delivery-state, 

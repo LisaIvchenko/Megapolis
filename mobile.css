@@ -115,6 +115,12 @@
         margin-left: 20px;
         margin-top: 0;
     }
+
+    .ordered-product-link {
+        font-family: SF UI Display;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media screen and (max-width: 733px) {
@@ -136,7 +142,7 @@
 
     .order-product-card {
         width: 90%;
-        height: 100px;
+        height: 80px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -145,10 +151,11 @@
 
     .product-photo {
         object-fit: contain;
+        height: 75px;
     }
 
     .ordered-product-link {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-left: 50px;
         
     }
@@ -306,3 +313,68 @@
     }
 
 }
+
+@media screen and (max-width: 414px) {
+    .expected-date-heading,
+    .expected-date,
+    .delivery-state,
+    .delivery-address,
+    .reciever-heading,
+    .reciever,
+    .reciever-phone {
+        font-family: SF UI Display;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .track-link-right {
+        width: 115px;
+        padding: 12px 12px;
+        align-self: flex-end;
+        margin-right: 25px;
+        
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .meta-mobile {
+        margin-top: 25px;
+    }
+
+    .dropdown,
+    .option {
+        width: 200px;
+    }
+
+    
+}
+
+@media screen and (max-width: 370px) {
+
+    .order-state-support {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .suport-svg {
+        margin-top: 10px;
+    }
+
+    .order-card-header {
+        height: 200px;
+    }
+
+    .products-list {
+        overflow: auto;
+    }
+
+    
+
+}
+
+
